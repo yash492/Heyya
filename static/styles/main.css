@@ -1,0 +1,46 @@
+h1 {
+    font-family: 'Cookie', cursive;
+    color: purple;
+    font-size: 85px;
+    text-align: center;
+}
+
+.form-control{
+    margin-right: 100px ;
+}
+
+.btn-primary{
+    background-color: purple !important;
+    border-color: purple !important;
+}
+
+#righthand-side {
+    padding: 2em 0 0 28.5em;
+    overflow: hidden; /* Make this div take up the rest of the horizontal space, and no more */
+    display: inline-block;
+}
+
+.formError {
+    list-style-type:none;
+    padding:0px;
+    color: red;
+}
+
+.heyya {
+    font-family: 'Cookie', cursive;
+    color: purple;
+    font-size: 35px;
+    padding-left: 2px;
+}
+
+@media (max-width: 588px) {
+    #righthand-side {
+        padding-left: 0.7em;
+    }
+}
+
+@media (min-width: 1000px) {
+    #righthand-side {
+        max-width: 80%;
+    }
+}
