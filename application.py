@@ -7,10 +7,12 @@ from time import localtime, strftime
 import os
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET')
+app.secret_key=os.environ.get('SECRET')
+app.config['WTF_CSRF_SECRET_KEY'] = "b'\x1e\xbd\x152kb\xd8\xdc\x7f\xe9>\xd1\xba\xfe\x1d\xfa'"
 
-#Configure database
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+# Configure database
+app.config['SQLALCHEMY_DATABASE_URI']=os.environ.get('DATABASE_URL')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 socketio = SocketIO(app)
