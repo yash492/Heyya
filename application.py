@@ -7,7 +7,7 @@ from time import localtime, strftime
 import os
 
 app = Flask(__name__)
-app.secret_key = os.os.environ.get('SECRET')
+app.secret_key = os.environ.get('SECRET')
 
 #Configure database
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
