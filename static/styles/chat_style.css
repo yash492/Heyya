@@ -1,6 +1,6 @@
 #display-message-section {
-    min-height: 73.5vh;
-    max-height: 73.5vh;
+    min-height: 71vh;
+    max-height: 71vh;
     overflow-y: auto; /*Make  this section scrolable */
 }
 
